@@ -244,14 +244,16 @@ nnoremap ; :
 
 " Disable the colorcolumn when switching modes.  Make sure this is the
 " first autocmd for the filetype here
-autocmd FileType * setlocal colorcolumn=0
+" autocmd FileType * setlocal colorcolumn=0 (Vim 7.3)
+autocmd FileType * setlocal
 
 " python support
 " --------------
 "  don't highlight exceptions and builtins. I love to override them in local
 "  scopes and it sucks ass if it's highlighted then. And for exceptions I
 "  don't really want to have different colors for my own exceptions ;-)
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 colorcolumn=79
+" autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 colorcolumn=79 (Vim 7.3)
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4
 \ formatoptions+=croq softtabstop=4 smartindent
 \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 let python_highlight_all=1
@@ -261,7 +263,8 @@ autocmd FileType pyrex setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 s
 
 " ruby support
 " ------------
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=79
+" autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=79 (Vim 7.3)
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " template language support (SGML / XML too)
 " ------------------------------------------
@@ -312,13 +315,16 @@ autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 " rst
 " ---
 autocmd BufNewFile,BufRead *.rst setlocal ft=rst
-autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
+"autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79 (Vim 7.3)
+autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 \ formatoptions+=nqt textwidth=74
 
 " markdown
 " ---
-autocmd BufNewFile,BufRead *.txt,*.markdown,*.md setlocal ft=markdown colorcolumn=79
-autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
+" autocmd BufNewFile,BufRead *.txt,*.markdown,*.md setlocal ft=markdown colorcolumn=79 (Vim 7.3)
+autocmd BufNewFile,BufRead *.txt,*.markdown,*.md setlocal ft=markdown
+" autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79 (Vim 7.3)
+autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " vim
 " ---
@@ -326,7 +332,8 @@ autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
 
 " Javascript
 " ----------
-autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=79
+" autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=79 (Vim 7.3)
+autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 let javascript_enable_domhtmlcss=1
 
 " Highlight the extra spaces
