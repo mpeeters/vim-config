@@ -352,7 +352,7 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 
 " Pep8 & PyFlakes
 " ---------------
-autocmd BufWritePre *.py call Pep8()
+autocmd BufWritePre *.py call Flake8()
 
 " Clipboard
 " ---------
