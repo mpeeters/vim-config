@@ -115,7 +115,7 @@ set titlestring=%F\ -\ Vim
 filetype on
 filetype plugin on
 
-" Activate a permanent ruler 
+" Activate a permanent ruler
 set ruler
 
 " Disable Toolbar, Scrollbar
@@ -128,7 +128,7 @@ set completeopt-=preview
 " Disable the blinking cursor.
 set gcr=a:blinkon0
 
-" Highlight current line 
+" Highlight current line
 if has("gui_running")
   set cursorline
 endif
@@ -236,8 +236,8 @@ set scrolloff=5
 let g:netrw_list_hide='^\.,.\(pyc\|pyo\|mo\)$'
 " let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
 
-let g:miniBufExplMapCTabSwitchBufs = 1 
-let g:miniBufExplModSelTarget = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
 
 " ; is an alias for :
 nnoremap ; :
