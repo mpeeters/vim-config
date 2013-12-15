@@ -320,6 +320,10 @@ autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 col
 autocmd BufNewFile,BufRead *.txt,*.markdown,*.md setlocal ft=markdown colorcolumn=79
 autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
 
+" zcml
+" ----
+autocmd FileType zcml setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
+
 " vim
 " ---
 autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
@@ -350,3 +354,7 @@ autocmd BufWritePre *.py call Flake8()
 " Clipboard
 " ---------
 set clipboard=unnamed
+
+" Make directory of the current dir
+" ---------------------------------
+set autochdir
