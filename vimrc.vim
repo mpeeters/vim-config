@@ -350,6 +350,7 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 " Pep8 & PyFlakes
 " ---------------
 autocmd BufWritePre *.py call Flake8()
+let g:flake8_ignore="E501"
 
 " Clipboard
 " ---------
