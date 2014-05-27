@@ -333,6 +333,11 @@ autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=79
 let javascript_enable_domhtmlcss=1
 
+" SQL
+" ---
+autocmd BufNewFile,BufRead *.sql setlocal ft=sql
+autocmd FileType sql setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
+
 " Highlight the extra spaces
 " --------------------------
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
