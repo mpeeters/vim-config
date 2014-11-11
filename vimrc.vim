@@ -344,6 +344,11 @@ autocmd FileType robot setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 c
 autocmd BufNewFile,BufRead *.sql setlocal ft=sql
 autocmd FileType sql setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
 
+" YAML
+" ----
+autocmd BufNewFile,BufRead *.yaml setlocal ft=yaml
+autocmd FileType yaml setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
+
 " Highlight the extra spaces
 " --------------------------
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
