@@ -1,8 +1,9 @@
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 """
 <+ MODULE +>
+~~~~~~~~~~~~
 
 Created by mpeeters
-Licensed under the GPL license, see LICENCE.txt for more details.
-Copyright by Affinitic sprl
+:copyright: (c) 2015 by Affinitic SPRL
+:license: GPL, see LICENCE.txt for more details.
 """
