@@ -4,6 +4,6 @@
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
 	url = git@github.com:mpeeters/vim-flake8.git
-[submodule "bundle/vim-bufexplorer"]
-	path = bundle/vim-bufexplorer
-	url = git@github.com:mpeeters/vim-bufexplorer.git
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = git@github.com:mpeeters/bufexplorer.git
