@@ -163,10 +163,6 @@ nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 " Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
 
-" NERDtree on <leader>t
-" nnoremap <leader>t :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$', '\.o$']
-
 " Make the command line two lines high and change the statusline display to
 " something that looks useful.
 set cmdheight=2
@@ -265,7 +261,7 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 co
 
 " template language support (SGML / XML too)
 " ------------------------------------------
-" and disable taht stupid html rendering (like making stuff bold etc)
+" and disable that stupid html rendering (like making stuff bold etc)
 
 fun! SelectHTML()
   let n = 1
@@ -300,6 +296,7 @@ autocmd BufNewFile,BufRead *.html,*.htm  call SelectHTML()
 autocmd BufNewFile,BufRead *.cfg setlocal ft=config
 autocmd BufNewFile,BufRead *.pp setlocal ft=puppet
 autocmd BufNewFile,BufRead *.sls setlocal ft=salt
+autocmd BufNewFile,BufRead *.xsd setlocal ft=xml
 let html_no_rendering=1
 
 autocmd FileType html,htmldjango,htmljinja,eruby,mako let b:closetag_html_style=1
@@ -318,7 +315,7 @@ autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 col
 " markdown
 " ---
 autocmd BufNewFile,BufRead *.txt,*.markdown,*.md setlocal ft=markdown colorcolumn=79
-autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
+autocmd FileType markdown setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=79
 
 " zcml
 " ----
@@ -361,7 +358,6 @@ match DoubleWhitespace /\s\s/
 
 " Personal Shortcuts
 " ------------------
-nnoremap <leader>t :NERDTreeToggle<CR>
 
 " Pep8 & PyFlakes
 " ---------------
