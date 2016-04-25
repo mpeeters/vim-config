@@ -4,6 +4,6 @@
 --------------------
 
 Created by mpeeters
-:copyright: (c) 2015 by Affinitic SPRL
+:copyright: (c) 2016 by Affinitic SPRL
 :license: GPL, see LICENCE.txt for more details.
 """
